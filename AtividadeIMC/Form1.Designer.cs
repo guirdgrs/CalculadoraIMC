@@ -38,6 +38,7 @@
             this.lblNota = new System.Windows.Forms.Label();
             this.lblKg = new System.Windows.Forms.Label();
             this.lblMetro = new System.Windows.Forms.Label();
+            this.lblImc = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPeso
@@ -77,7 +78,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(12, 141);
+            this.btnCalcular.Location = new System.Drawing.Point(12, 152);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(180, 23);
             this.btnCalcular.TabIndex = 4;
@@ -98,7 +99,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(35, 218);
+            this.lblResultado.Location = new System.Drawing.Point(35, 230);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 13);
             this.lblResultado.TabIndex = 8;
@@ -107,7 +108,7 @@
             // lblNota
             // 
             this.lblNota.AutoSize = true;
-            this.lblNota.Location = new System.Drawing.Point(21, 185);
+            this.lblNota.Location = new System.Drawing.Point(21, 196);
             this.lblNota.Name = "lblNota";
             this.lblNota.Size = new System.Drawing.Size(175, 13);
             this.lblNota.TabIndex = 9;
@@ -131,11 +132,21 @@
             this.lblMetro.TabIndex = 11;
             this.lblMetro.Text = "m";
             // 
+            // lblImc
+            // 
+            this.lblImc.AutoSize = true;
+            this.lblImc.Location = new System.Drawing.Point(61, 136);
+            this.lblImc.Name = "lblImc";
+            this.lblImc.Size = new System.Drawing.Size(0, 13);
+            this.lblImc.TabIndex = 12;
+            this.lblImc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(204, 263);
+            this.Controls.Add(this.lblImc);
             this.Controls.Add(this.lblMetro);
             this.Controls.Add(this.lblKg);
             this.Controls.Add(this.lblNota);
@@ -166,6 +177,7 @@
         private System.Windows.Forms.Label lblNota;
         private System.Windows.Forms.Label lblKg;
         private System.Windows.Forms.Label lblMetro;
+        private System.Windows.Forms.Label lblImc;
     }
 }
 

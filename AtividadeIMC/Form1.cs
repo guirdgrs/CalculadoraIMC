@@ -28,6 +28,7 @@ namespace AtividadeIMC
                     peso = double.Parse(txbPeso.Text); //Peso
                     altura = double.Parse(txbAltura.Text); //Altura
 
+
                     //Min peso    //Max peso    //Min altura    //Max altura
                 if (peso <= 10 || peso >= 800 || altura <= 0.3 || altura >= 2.8 ) //Peso ou altura inválidos
                 {
@@ -42,31 +43,39 @@ namespace AtividadeIMC
 
                     if (imc < 18.5) //Condição de Imc
                     {
+                        lblImc.Text = "O IMC é: " + Math.Round(imc, 3).ToString();
                         lblResultado.Text = "Abaixo do Peso"; //Classificação
                         lblResultado.ForeColor = Color.DarkBlue; //Mudar cor do texto
+
                     }
                     else if (imc >= 18.6 && imc <= 24.9)
                     {
+                        lblImc.Text = "O IMC é: " + Math.Round(imc, 3).ToString();
                         lblResultado.Text = "Peso ideal";
                         lblResultado.ForeColor = Color.Green; //Verde
                     }
                     else if (imc >= 25 && imc <= 29.9)
+
                     {
+                        lblImc.Text = "O IMC é: " + Math.Round(imc, 3).ToString();
                         lblResultado.Text = "Levemente acima do peso";
                         lblResultado.ForeColor = Color.Orange; //Laranja
                     }
                     else if (imc >= 30 && imc <= 34.9)
                     {
+                        lblImc.Text = "O IMC é: " + Math.Round(imc, 3).ToString();
                         lblResultado.Text = "Obesidade - Grau I";
                         lblResultado.ForeColor = Color.IndianRed; //Vermelho indian
                     }
                     else if (imc >= 35 && imc <= 39.9)
                     {
+                        lblImc.Text = "O IMC é: " + Math.Round(imc, 3).ToString();
                         lblResultado.Text = "Obesidade - Grau II (Severa)"; //Vermelho
                         lblResultado.ForeColor = Color.Red;
                     }
                     else //Imc > 40
                     {
+                        lblImc.Text = "O IMC é: " + Math.Round(imc, 3).ToString();
                         lblResultado.Text = "Obesidade - Grau III (Mórbida)"; //Vermelho escuro
                         lblResultado.ForeColor = Color.DarkRed;
                     }
